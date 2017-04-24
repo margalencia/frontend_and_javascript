@@ -716,6 +716,29 @@ a:focus {
     display: block;
 }
 
+.slide-image {
+    border-radius: 3px;
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0.8);
+}
+
 .lang-logo figcaption {
     text-align: center;
 }
+
+@keyframes frameworks {
+    0% {
+        opacity: 0;
+        transform: translateZ(-1000em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.framework-image {
+    display: block;
+    margin: 0 auto;
+    animation: frameworks 1s ease-out;
+}
+
